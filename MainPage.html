@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
-    <link rel="stylesheet" type="text/css" href="MainPage.css">
+    <link rel="stylesheet" type="text/css" href="./css/MainPage.css">
+    <link rel="stylesheet" type="text/css" href="./jquery.bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body>
+<body  class="container-fluid">
     <header>
-        <a href="MainPage.html" ><img src="./img/Book-icon.png" alt="Home"></a>
-        <span style="margin-left: 10px;  font-size:20px; color: white;">Thể loại</span>
+        <a href="MainPage.html" ><i class="fa fa-book fa-2x"></i></a>
+        <span style="margin-left: 10px;  font-size:25px; color: white;">Thể loại</span>
         <select id="category" onchange="javascript:location.href = this.value;">
-            <option >Tiên Hiệp</option>
-            <option value="BookDescriptionPage.html">Kiếm hiệp</option>
-            <option>Ngôn tình</option>
+            <option value="./category/tienhiep/tienhiep.html">Tiên Hiệp</option>
+            <option>Kiếm hiệp</option>
+            <option value="./category/ngontinh/ngontinh.html">Ngôn tình</option>
             <option>Lịch sử</option>
             <option>Trinh thám</option>
-            <option>Tiểu thuyết</option>
+            <option value="./category/tieuthuyet/tieuthuyet.html">Tiểu thuyết</option>
             <option>Võng du</option>
         </select>
     </header>
-    <section>
-        <article>
+    <div class="row" style="margin-left: 1%; margin-top: 100px;">
+        <div class="slider1">
+            <div class="slide"><img src="./img/tien%20hiep/debakwsndeXHet.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/bactongphongluuf1YpHTeeA2.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/linhvucGhklYnDKsX.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/ngaothecuutrongthienNYRAJ7UtzJ.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/nhatthechitonLk3H2xvUBp.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/vucucthienhayM5v2qvT4P.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tieu%20thuyet/daichuateFjfphmK9Ra.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tieu%20thuyet/longhuyetchienthan1ufynkj7ie.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tieu%20thuyet/nunhansaulungdequocthientaitieuvuongphi8xjxJDf5PI.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/debakwsndeXHet.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/bactongphongluuf1YpHTeeA2.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/linhvucGhklYnDKsX.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/ngaothecuutrongthienNYRAJ7UtzJ.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/nhatthechitonLk3H2xvUBp.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tien%20hiep/vucucthienhayM5v2qvT4P.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tieu%20thuyet/daichuateFjfphmK9Ra.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tieu%20thuyet/longhuyetchienthan1ufynkj7ie.jpg" alt="" /></div>
+            <div class="slide"><img src="./img/tieu%20thuyet/nunhansaulungdequocthientaitieuvuongphi8xjxJDf5PI.jpg" alt="" /></div>
+        </div>
+    </div>
+    <section class="row">
+        <article class="col-sm-8">
             <h2>Truyện mới cập nhật</h2>
             <div class="book">
-                <a href="BookDescriptionPage.html"><img src="./img/tieu%20thuyet/longhuyetchienthan1ufynkj7ie.jpg"></a>
+                <a href="./book/longhuyetchienthan/longhuyetchienthanDes.html"><img src="./img/tieu%20thuyet/longhuyetchienthan1ufynkj7ie.jpg"></a>
                 <p class="book-describe">Long huyết chiến thần</p>
             </div>
             <div class="book">
-                <img src="./img/tieu%20thuyet/daichuateFjfphmK9Ra.jpg">
-                <p class="book-describe">Đại chúa </p>
+                <a href="./book/daichuate/daichuateDes.html"><img src="./img/tieu%20thuyet/daichuateFjfphmK9Ra.jpg"></a>
+                <p class="book-describe">Đại chúa tể</p>
             </div>
             <div class="book">
                 <img src="./img/tieu%20thuyet/nunhansaulungdequocthientaitieuvuongphi8xjxJDf5PI.jpg">
@@ -58,31 +86,47 @@
                 <img src="./img/tien%20hiep/nhatthechitonLk3H2xvUBp.jpg">
                 <p class="book-describe">Nhất thế chí tôn</p>
             </div>
+            <div class="book">
+                <img src="./img/tien%20hiep/ngaothecuutrongthienNYRAJ7UtzJ.jpg">
+                <p class="book-describe">NGẠO THẾ CỬU TRỌNG THIÊN</p>
+            </div>
         </article>
-        <aside>
+        <aside class="col-sm-4">
             <h2>Thể loại</h2>
             <ul>
-                <li><a href="" >Tiên hiệp</a></li>
+                <li><a href="./category/tienhiep/tienhiep.html" >Tiên hiệp</a></li>
                 <li><a href="" >Kiếm hiệp</a></li>
-                <li><a href="" >Ngôn tình</a></li>
+                <li><a href="./category/ngontinh/ngontinh.html" >Ngôn tình</a></li>
                 <li><a href="" >Lịch sử</a></li>
                 <li><a href="" >Trinh thám</a></li>
-                <li><a href="" >Tiểu thuyết</a></li>
+                <li><a href="./category/tieuthuyet/tieuthuyet.html" >Tiểu thuyết</a></li>
                 <li><a href="" >Võng du</a></li>
             </ul>
         </aside>
+        <aside class="col-sm-4">
+            <h2>Truyện Hot</h2>
+            <ol>
+                <li><a href="./book/daichuate">Đại chúa tể</a></li>
+                <li><a href="./book/longhuyetchienthan">Long huyết chiến thần</a> </li>
+                <li><a href="">Nhất thế chí tôn</a></li>
+                <li><a href="">Đế bá</a></li>
+                <li><a href="">Linh Vực</a></li>
+            </ol>
+        </aside>
     </section>
 
-    <footer>
+    <footer class="row">
         <p>
         Website đọc truyện online chất lượng hàng đầu việt nam, với nhiều truyện tiên hiệp, truyện kiếm hiệp, truyện<br>
         ngôn tình, truyện teen, truyện đô thị được chọn lọc và đăng tải một cách kĩ lưỡng.Mời bạn đọc và ủng hộ website<br>
         bằng cách giới thiệu đến bạn bè, chúc bạn có những giây phút đọc truyện thư giãn thật bổ ích.
         </p>
-        <p style="margin-left: 300px;">
+        <p style="margin-right: 100px;float: right;padding-top: 20px;">
             Copy right 2017<br>
             Contact us
         </p>
     </footer>
+    <script src="./jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

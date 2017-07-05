@@ -1,10 +1,14 @@
+body{
+    margin:0;
+}
+
 header{
     position: fixed;
     top:0px;
-    left:10px;
+    left:0px;
     background-color: deepskyblue;
     padding: 10px 10px;
-    width: 98%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -15,14 +19,7 @@ section{
     height: 70%;
 }
 
-section img {
-    margin-left: 20%;
-}
-
 section div{
-    text-align: center;
-}
-
-a{
-    font-size: 20px;
+    font-size: large;
+    font-family:Arial;
 }
