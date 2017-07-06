@@ -5,7 +5,9 @@ $(document).ready(function(){
         minSlides: 2,
         maxSlides: 5,
         slideMargin: 20,
-        speed: 900
+        speed: 700,
+        auto: true,
+        // pause: 4000
     });
 });
 
